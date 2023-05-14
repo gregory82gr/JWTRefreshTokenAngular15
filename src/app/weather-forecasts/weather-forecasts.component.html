@@ -1,0 +1,15 @@
+<h1>Vreme U Kotezu</h1>
+<div *ngFor="let weatherForecast of weatherForecasts;">
+
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Datum: {{weatherForecast.date}}</h5>
+                    <p class="card-text">Celsius: {{weatherForecast.temperatureC}}</p>
+                    <p class="card-text">Faranait: {{weatherForecast.temperatureF}}</p>
+                    <a class="btn btn-primary">Vreme: {{weatherForecast.summary}}</a>
+                </div>
+            </div>
+        </div>
+
+</div>
